@@ -16,11 +16,12 @@ a {
 /* timeline cards style*/
 #timeline-0 {
   background-color: rgba(200, 36, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-0 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -31,17 +32,17 @@ a {
   background-color: rgba(200, 36, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-1 {
   background-color: rgba(200, 71, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-1 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -52,17 +53,17 @@ a {
   background-color: rgba(200, 71, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-2 {
   background-color: rgba(200, 106, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-2 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -73,17 +74,17 @@ a {
   background-color: rgba(200, 106, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-3 {
   background-color: rgba(200, 141, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-3 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -94,17 +95,17 @@ a {
   background-color: rgba(200, 141, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-4 {
   background-color: rgba(200, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-4 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -115,17 +116,17 @@ a {
   background-color: rgba(200, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-5 {
   background-color: rgba(180, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-5 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -136,17 +137,17 @@ a {
   background-color: rgba(180, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-6 {
   background-color: rgba(160, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-6 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -157,17 +158,17 @@ a {
   background-color: rgba(160, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-7 {
   background-color: rgba(140, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-7 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -178,17 +179,17 @@ a {
   background-color: rgba(140, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-8 {
   background-color: rgba(120, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-8 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -199,17 +200,17 @@ a {
   background-color: rgba(120, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-9 {
   background-color: rgba(100, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-9 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -220,17 +221,17 @@ a {
   background-color: rgba(100, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-10 {
   background-color: rgba(80, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-10 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -241,17 +242,17 @@ a {
   background-color: rgba(80, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
 #timeline-11 {
   background-color: rgba(60, 176, 10, 0.5);
-  color: rgba(215, 215, 215, 0.8);
+  color: rgba(215, 215, 215, 0.6);
   text-align: center;
-  flex-basis: min-content;
-  flex-grow: 1;
-  border-radius: 0.5vw;
+  flex: 1 0 min-content;
+  border-radius: 0.5vw 0.5vw 0 0;
+  border-bottom: 5px solid #2f2f2f50;
+  transition: linear 1s 0s background-color;
 }
 #timeline-11 header h4 {
   color: rgba(215, 215, 215, 0.8);
@@ -262,7 +263,6 @@ a {
   background-color: rgba(60, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  transition: linear 1s 0s background-color;
   z-index: 1;
 }
 
@@ -273,13 +273,19 @@ header {
 
 footer {
   display: flex;
-  background-color: lightgray;
+  height: 100vh;
   width: 100%;
   text-align: center;
   padding: 1% 0;
+  justify-content: space-evenly;
+  align-items: center;
 }
 footer > div {
-  width: 50%;
+  height: 25vh;
+  width: 25%;
+  box-shadow: 1px 1px 25px 5px gray;
+  border-radius: 1vw;
+  background-color: #fff;
 }
 
 #main-nav-bar {
@@ -296,9 +302,16 @@ footer > div {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-#first-article::before {
+#initial-cover {
+  background: no-repeat center/100% url(./preventSmoking.jpeg);
+  height: 100vh;
+  filter: grayscale(50%);
+  align-items: center;
+}
+#initial-cover::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -306,10 +319,61 @@ footer > div {
   left: 0px;
   right: 0px;
   width: 100%;
-  height: auto;
-  background: no-repeat center/100% url(./smoke.jpg) #fff;
-  z-index: -1;
-  filter: grayscale(75%);
+  background: linear-gradient(360deg, #f1f1f1 1%, #f1f1f163 3%, #f1f1f100 5%);
+}
+#initial-cover h1 {
+  color: white;
+}
+
+#first-article {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+#first-article > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+}
+#first-article > div img {
+  height: 90vh;
+  border-radius: 0.5vw;
+}
+#first-article > div img:hover + #costCal {
+  position: absolute;
+  display: initial;
+}
+#first-article > div img:hover + #costCal label {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 1vw;
+  border-radius: 0.5vw;
+  box-shadow: 1px 1px 5px 5px #f1f1f1;
+  flex: 0 5 3em;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+#first-article > div #costCal {
+  display: none;
+}
+#first-article ul {
+  display: flex;
+  width: 50%;
+  padding: 0 2.5%;
+  min-height: inherit;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#first-article ul li {
+  color: #2f2f2f;
+  border-left: 1em solid #537d53;
+  border-radius: 0.5vw 0 0 0.5vw;
+  padding-left: 0.5vw;
 }
 
 #second-article {
@@ -318,7 +382,7 @@ footer > div {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #333;
+  background-color: #2f2f2f;
 }
 #second-article header {
   align-items: center;
@@ -334,35 +398,55 @@ footer > div {
   flex-wrap: wrap;
 }
 
-#costCal {
-  display: none;
+#tips header {
+  padding: 2.5% 0;
 }
-
-#first-article {
-  position: relative;
-  width: 100%;
-}
-
-#main-header {
-  background: no-repeat center/100% url(./preventSmoking.jpeg);
-  height: 100vh;
-  filter: grayscale(75%);
-  align-items: center;
-}
-
-#main-header h1 {
-  color: white;
-}
-
 #tips section {
-  margin: auto 10%;
+  display: flex;
+  justify-content: space-evenly;
   min-height: 100vh;
 }
 #tips section div {
+  display: flex;
+  justify-content: center;
+}
+#tips section div div {
+  margin: 0 10%;
   padding: 2.5vw;
-  background-image: linear-gradient(90deg, #2f2f2f, #2f2f2f50 75%, #2f2f2f25 90%, #f1f1f1 100%);
-  color: #fff;
+  background-color: #2f2f2f;
+  color: #f1f1f1;
   border-radius: 1vw;
+}
+
+/* webpage last items inside the footer*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact:hover h2 {
+  display: none;
+}
+#contact:hover div {
+  display: initial;
+}
+#contact div {
+  display: none;
+}
+
+#sourcesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#sourcesContainer ul {
+  display: none;
+}
+#sourcesContainer:hover ul {
+  display: initial;
+}
+#sourcesContainer:hover h2 {
+  display: none;
 }
 
 .rm-def-style {
@@ -381,14 +465,6 @@ footer > div {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: stretch;
-}
-
-.grid-arrangement {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  min-height: 100vh;
-  align-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
