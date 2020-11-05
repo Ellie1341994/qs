@@ -138,17 +138,28 @@ footer {
     &::before {
         content: "";
         position: absolute;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(360deg, #f1f1f1 1%, #f1f1f163 3%, #f1f1f100 5%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        height: auto;
+        margin: 5%;
+        background: no-repeat center url(./preventSmoking.jpeg);
+        background-size: 100% auto;
+        border-radius: 1vh;
     }
-    background: no-repeat center url(./preventSmoking.jpeg);
+    position: relative;
     width: 100%;
-    filter: grayscale(50%);
     height: 100vh;
+    text-align: center;
     align-items: center;
     h1 {
+        z-index: 0;
         color: white;
+        a {
+            font-style: italic;
+        }
     }
 }
 #first-article {
@@ -246,14 +257,12 @@ footer {
         min-height: 100vh;
         flex-wrap: wrap;
         > div {
-            display: flex;
-            justify-content: space-between;
             .bigExclamation {
                 padding: 1vw;
                 margin: 0 2.5%;
                 font-size: 5em;
-                border: 2px solid #f1f1f1;
-                border-radius: 1vw;
+                text-align: center;
+                width: 25%;
             }
             .tip {
                 &::before {
@@ -266,6 +275,7 @@ footer {
                     height: 1vw;
                     transform: rotate(45deg);
                 }
+                width: 75%;
                 position: relative;
                 margin: 0 2.5%;
                 padding: 2.5vw;
@@ -274,6 +284,7 @@ footer {
                 border-top: 1vh solid #537d53;
                 border-radius: 1vw;
             }
+            display: flex;
         }
     }
 }
