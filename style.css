@@ -277,32 +277,65 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1% 0;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-footer > div {
-  height: 25vh;
-  width: 25%;
+footer #formContainer {
+  padding: 2.5vw;
   box-shadow: 1px 1px 25px 5px gray;
-  border-radius: 1vw;
+  border-radius: 0 0 0.5vw 0.5vw;
+}
+footer #contactInfoContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+footer #contactInfoContainer > div {
+  padding: 2.5vw;
+  box-shadow: 1px 1px 25px 5px gray;
   background-color: #fff;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 0 0.5vw 0.5vw;
+}
+footer #contactInfoContainer > div:hover h2 {
+  visibility: hidden;
+}
+footer #contactInfoContainer > div:hover div, footer #contactInfoContainer > div:hover ul {
+  visibility: visible;
+}
+footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
+  visibility: hidden;
 }
 
 #main-nav-bar {
   position: fixed;
   z-index: 2;
   width: 100%;
-  text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 #main-nav-bar > ul {
-  padding: 1%;
-  background-color: #ffffff50;
-  width: 50%;
+  position: relative;
+  right: 5vw;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  font-size: 0.75em;
+  padding: 1%;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  justify-content: stretch;
+  border-radius: 0 0 0.5vw 0.5vw;
+  border: 1px solid #333;
+}
+#main-nav-bar > ul li {
+  color: #333;
+  padding: 0.5vw;
+}
+#main-nav-bar > ul li:hover {
+  text-decoration: underline;
 }
 
 #initial-cover {
@@ -342,11 +375,11 @@ footer > div {
   height: 90vh;
   border-radius: 0.5vw;
 }
-#first-article > div img:hover + #costCal {
+#first-article > div img:hover + #costCal, #first-article > div img + #costCal:hover + #costCal {
   position: absolute;
   display: initial;
 }
-#first-article > div img:hover + #costCal label {
+#first-article > div img:hover + #costCal label, #first-article > div img + #costCal:hover + #costCal label {
   display: flex;
   background-color: #f1f1f1;
   padding: 1vw;
@@ -416,37 +449,6 @@ footer > div {
   background-color: #2f2f2f;
   color: #f1f1f1;
   border-radius: 1vw;
-}
-
-/* webpage last items inside the footer*/
-#contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#contact:hover h2 {
-  display: none;
-}
-#contact:hover div {
-  display: initial;
-}
-#contact div {
-  display: none;
-}
-
-#sourcesContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#sourcesContainer ul {
-  display: none;
-}
-#sourcesContainer:hover ul {
-  display: initial;
-}
-#sourcesContainer:hover h2 {
-  display: none;
 }
 
 .rm-def-style {
