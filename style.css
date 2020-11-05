@@ -9,8 +9,11 @@ html {
 
 a {
   text-decoration: none;
-  font-weight: bold;
   color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* timeline cards style*/
@@ -280,26 +283,34 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  color: #333;
 }
 footer #formContainer {
   padding: 2.5vw;
   box-shadow: 1px 1px 25px 5px gray;
   border-radius: 0 0 0.5vw 0.5vw;
 }
+footer #formContainer form div {
+  padding: 1vw;
+}
 footer #contactInfoContainer {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
+  padding: 0.5vw;
 }
 footer #contactInfoContainer > div {
-  padding: 2.5vw;
-  box-shadow: 1px 1px 25px 5px gray;
-  background-color: #fff;
-  width: max-content;
   display: flex;
+  padding: 2.5vw;
+  background-color: #fff;
   flex-direction: column;
   justify-content: center;
   border-radius: 0 0 0.5vw 0.5vw;
+  text-align: left;
+  flex: 0 0 max-content;
+}
+footer #contactInfoContainer > div:hover {
+  box-shadow: 1px 1px 25px 5px gray;
 }
 footer #contactInfoContainer > div:hover h2 {
   visibility: hidden;
@@ -308,6 +319,7 @@ footer #contactInfoContainer > div:hover div, footer #contactInfoContainer > div
   visibility: visible;
 }
 footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
+  position: absolute;
   visibility: hidden;
 }
 
@@ -431,6 +443,10 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
   flex-wrap: wrap;
 }
 
+#tips {
+  background: #333;
+  color: #f1f1f1;
+}
 #tips header {
   padding: 2.5% 0;
 }
@@ -439,22 +455,31 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
   justify-content: space-evenly;
   min-height: 100vh;
 }
-#tips section div {
+#tips section > div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-#tips section div div {
+#tips section > div .bigExclamation {
+  margin: 0 2.5%;
+  font-size: 5em;
+}
+#tips section > div .tip {
+  position: relative;
   margin: 0 10%;
   padding: 2.5vw;
-  background-color: #2f2f2f;
-  color: #f1f1f1;
+  background-color: #f1f1f1;
+  color: #333;
   border-radius: 1vw;
 }
-
-.rm-def-style {
-  text-decoration: 0;
-  color: black;
-  list-style-type: none;
+#tips section > div .tip::before {
+  content: "";
+  position: absolute;
+  background: #f1f1f1;
+  top: 45%;
+  left: -0.5vw;
+  width: 1vw;
+  height: 1vw;
+  transform: rotate(45deg);
 }
 
 .horizontal-arrangement {

@@ -7,8 +7,10 @@ html {
 }
 a {
     text-decoration: none;
-    font-weight: bold;
     color: inherit;
+}
+ul {
+    list-style-type: none;
 }
 /* timeline cards style*/
 $counter: 0;
@@ -59,22 +61,21 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    color: #333;
     #formContainer {
         padding: 2.5vw;
         box-shadow: 1px 1px 25px 5px gray;
         border-radius: 0 0 0.5vw 0.5vw;
+        form {
+           div {
+               padding: 1vw;
+           } 
+        }
     }
     #contactInfoContainer {
         > div {
-            padding: 2.5vw;
-            box-shadow: 1px 1px 25px 5px gray;
-            background-color: #fff;
-            width: max-content;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-radius: 0 0 0.5vw 0.5vw;
             &:hover {
+                box-shadow: 1px 1px 25px 5px gray;
                 h2 {
                     visibility: hidden;
                 }
@@ -83,12 +84,22 @@ footer {
                 }
             }
             div, ul {
+                position: absolute;
                 visibility: hidden;
             }
+            display: flex;
+            padding: 2.5vw;
+            background-color: #fff;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 0 0 0.5vw 0.5vw;
+            text-align: left;
+            flex: 0 0 max-content;
         }
         display: flex;
         justify-content: space-evenly;
         width: 50%;
+        padding: 0.5vw;
     }
 }
 #main-nav-bar {
@@ -207,9 +218,11 @@ footer {
         min-height: 80vh;
         justify-content: space-evenly;
         flex-wrap: wrap;
-}
+    }
 }
 #tips {
+    background: #333;
+    color: #f1f1f1;
     header {
         padding: 2.5% 0;
     }
@@ -217,23 +230,33 @@ footer {
         display: flex;
         justify-content: space-evenly;
         min-height: 100vh;
-        div {
+        > div {
             display: flex;
-            justify-content: center;
-            div {
+            justify-content: space-between;
+            .bigExclamation {
+                margin: 0 2.5%;
+                font-size: 5em;
+            }
+            .tip {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background: #f1f1f1;
+                    top: 45%;
+                    left: -0.5vw;
+                    width: 1vw;
+                    height: 1vw;
+                    transform: rotate(45deg);
+                }
+                position: relative;
                 margin: 0 10%;
                 padding: 2.5vw;
-                background-color: #2f2f2f;
-                color: #f1f1f1;
+                background-color: #f1f1f1;
+                color: #333;
                 border-radius: 1vw;
             }
         }
     }
-}
-.rm-def-style {
-    text-decoration: 0;
-    color: black;
-    list-style-type: none;
 }
 .horizontal-arrangement {
     display: flex;
