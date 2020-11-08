@@ -12,41 +12,6 @@ a {
 ul {
     list-style-type: none;
 }
-/* timeline cards style*/
-$counter: 0;
-$r: 200;
-$g: 1;
-$b: 10;
-@while $counter <= 11 {
-    @if $g < 150 {
-        $g: $g + 35;
-    }
-    @else {
-        $r: $r - 20;
-    }
-    #timeline-#{$counter} {
-        background-color: rgba($r, $g, $b, 0.50);
-        color: rgba(215, 215, 215 , 0.60);
-        header {
-            h4 {
-                color: rgba(215, 215, 215 , 0.80);
-                text-transform: uppercase;
-            }
-        }
-        text-align: center;
-        flex: 1 0 min-content;
-        border-radius: 0.5vw 0.5vw 0 0;
-        border-bottom: 5px solid #2f2f2f50;
-        transition: linear 1s 0s background-color;
-    }
-    #timeline-#{$counter}:hover {
-        background-color: rgba($r, $g, $b, 0.75);
-        color: rgba(215, 215, 215 , 1);
-        box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-    }
-    $counter:  $counter + 1;
-
-}
 header {
     display: flex;
     justify-content: center;
@@ -57,24 +22,29 @@ footer {
             padding: 2% 0;
         }
         label, input {
-           padding: 0.5vw 0;
+           padding: 0.5%;
         } 
         textarea {
-            padding: 0.5vw; 
+            padding: 0.5%; 
             min-height: 25vh;
             width: 80%;
             box-sizing: border-box;
+            border: none;
         }
         div {
             label {
                 width: 20%;
             }
             input {
+                border: none;
                 width: 80%;
             }
+            display: flex;
+            justify-content: space-around;
             width: 80%;
             padding: 0.5vw 0;
         }
+        color: #333;
         position: relative;
         display: flex;
         max-height: 90vh;
@@ -172,61 +142,60 @@ footer {
     }
 }
 #first-article {
-    > div {
-        img {
-            position: sticky;
-            top: 0%;
-            margin: 1vw;
-            min-height: 0;
-            max-width: 100%;
-            height: 90vh;
-            border-radius: 0.5vw;
-            align-self: flex-start;
-            &:hover, + #costCal:hover {
-                + #costCal {
-                    position: absolute;
-                    display: none;
-                    label {
-                        display: flex;
-                        background-color: #f1f1f1;
-                        padding: 1vw;
-                        border-radius: 0.5vw;
-                        box-shadow: 1px 1px 5px 5px #f1f1f1;
-                        flex: 0 5 3em;
-                        flex-direction: column;
-                        justify-content: space-evenly;
-                        align-items: stretch;
-                    }
-                }
+    #costs {
+        > div {
+            img {
+                position: sticky;
+                top: 20%;
+                margin: 1vw;
+                min-height: 0;
+                max-width: 100%;
+                max-height: 90vh;
+                border-radius: 0.5vw;
+                align-self: flex-start;
             }
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 50%;
         }
-        #costCal {
-            display: none;
+        ul {
+            li {
+                color: #2f2f2f;
+                border-left: 0.5em solid #537d53;
+                padding-left: 0.5vw;
+                margin: 1vw 0;
+            }
+            display: flex;
+            width: 50%;
+            padding: 0 2.5%;
+            min-height: inherit;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
         }
         position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        width: 50%;
+        min-height: 100vh; 
+        width: 80%;
     }
-    ul {
-        li {
-            color: #2f2f2f;
-            border-left: 0.5em solid #537d53;
-            padding-left: 0.5vw;
-            margin: 1vw 0;
+    #calc {
+        background: #333;
+        width: 85%;
+        border-radius: 0.5vw;
+        padding: 2.5%;
+        margin: 2.5%;
+        color: #f1f1f1;
+        text-align: center;
+        label * {
+            margin: 0.5% 0;
         }
-        display: flex;
-        width: 50%;
-        padding: 0 2.5%;
-        min-height: inherit;
-        flex-direction: column;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
     }
-    position: relative;
+    align-items: center;
     display: flex;
+    flex-direction: column;
     min-height: 100vh; 
     width: 100%;
 }
@@ -234,21 +203,59 @@ footer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     background-color: #333;
     header {
         h2 {
-            color: rgba(255,255,255,0.8);
+            color: #f1f1f1; 
         }
         align-items: center;
         min-height: 20vh;
     } 
     #timeline {
         display: flex;
-        min-height: 80vh;
-        justify-content: space-evenly;
         flex-wrap: wrap;
+        a {
+            font-weight: bold;
+        }
+        /* timeline cards style*/
+        $counter: 0;
+        $r: 200;
+        $g: 1;
+        $b: 10;
+        @while $counter <= 11 {
+            @if $g < 150 {
+                $g: $g + 30;
+            }
+            @else {
+                $r: $r - 20;
+            }
+            #timeline-#{$counter} {
+                background-color: rgba($r, $g, $b, 0.50);
+                color: rgba(215, 215, 215 , 0.60);
+                header {
+                    h4 {
+                        color: rgba(215, 215, 215 , 0.80);
+                        text-transform: uppercase;
+                    }
+                }
+                text-align: center;
+                flex: 1 0 9%;
+                border-radius: 0.5vw 0.5vw 0 0;
+                border-bottom: 5px solid #2f2f2f50;
+                transition: linear 1s 0s background-color;
+            }
+            #timeline-#{$counter}:hover {
+                background-color: rgba($r, $g, $b, 0.75);
+                color: rgba(215, 215, 215 , 1);
+                box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
+                z-index: 1;
+            }
+            $counter:  $counter + 1;
+
+        }
     }
 }
 #tips {

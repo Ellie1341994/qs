@@ -33,59 +33,61 @@
     </header>
     <main>
         <article id="first-article">
-            <ul >
-                <li >
-                    <h4>Socially smoking is not that safe</h4>
-                    <p>You're putting yourself at risk of addiction and harming your already good health by both actively and pasively smoking in such a pleasurable environment that further reinforces this behaviour.</p>
-                </li>
-                <li >
-                    <h4>Even a few make a huge impact</h4> 
-                    <p>Smoking just one cigarette a day results in a risk of coronary heart disease that is halfway between that of a heavy smoker and a non-smoker.</p>
-                </li>
-                <li >
-                    <h4> Worsens your Dental Health and appearance</h4>
-                    <p>Besides teeth discoloration, smoking can cause periodontal disease (its early stage is known as gingivitis) which causes bad breath and tooth loss. It can also cause Smoker's melanosis which is seen with the naked eye as a brown to black pigmentation of the oral tissue</p>
-                </li>
-                <li >
-                    <h4>Building a family gets harder</h4>
-                    <p>Smoking can make it harder for a woman to become pregnant. It can also affect her baby’s health before and after birth. It can also affect men’s sperm, which can reduce fertility and also increase risks for birth defects and miscarriage.</p>
-                </li>
-                <li >
-                    <h4>It's not just the lungs.</h4>
-                    <p>Smoking harms nearly every organ of the body and affects a person’s overall health.</p>
-                </li>
-                <li >
-                    <h4>There is not much of a difference between Cigars and Cigarretes</h4>
-                    <p>Cigar smoking carries many of the same health risks as cigarette smoking.   
-                    </p>
-                </li>
-            </ul>
-            <div>
-                <img src="smoke.jpg" alt="An empty Hand.">
-                <span id="costCal"> 
-                    <label id="test">
-                        Smoking
-                        <input type="number" min="0" value="20" name="prodQuantity" id="prodQuantity">
-                        <select name="tabaccoProductFormat" id="tabaccoProductFormat"> 
-                            <option selected="true" value="">Cigarrete(s)</option>
-                            <option value="">Cigarrete Pack(s)</option>
-                        </select>
-                        per
-                        <select name="consumptionPeriod" id="consumptionPeriod">
-                            <option selected="true" value="daily">Day</option>
-                            <option value="weekly">Week</option>
-                            <option value="monthly">Month</option>
-                        </select>
-                        for which each costs
-                        $<input type="number" step="0.01" min="0" value="0.23" name="prodPrice" id="prodPrice">
-                        leaks you of 
-                        <span id="dailyLeak"></span>
-                        <span id="weeklyLeak"></span>
-                        <span id="monthlyLeak"></span>
-                        <span id="anualLeak"></span>
-                    </label>
-                </span>
-            </div>
+            <section id="costs">
+                <ul >
+                    <li >
+                        <h4>Socially smoking is not that safe</h4>
+                        <p>You're putting yourself at risk of addiction and harming your already good health by both actively and pasively smoking in such a pleasurable environment that further reinforces this behaviour.</p>
+                    </li>
+                    <li >
+                        <h4>Even a few make a huge impact</h4> 
+                        <p>Smoking just one cigarette a day results in a risk of coronary heart disease that is halfway between that of a heavy smoker and a non-smoker.</p>
+                    </li>
+                    <li >
+                        <h4> Worsens your Dental Health and appearance</h4>
+                        <p>Besides teeth discoloration, smoking can cause periodontal disease (its early stage is known as gingivitis) which causes bad breath and tooth loss. It can also cause Smoker's melanosis which is seen with the naked eye as a brown to black pigmentation of the oral tissue</p>
+                    </li>
+                    <li >
+                        <h4>Building a family gets harder</h4>
+                        <p>Smoking can make it harder for a woman to become pregnant. It can also affect her baby’s health before and after birth. It can also affect men’s sperm, which can reduce fertility and also increase risks for birth defects and miscarriage.</p>
+                    </li>
+                    <li >
+                        <h4>It's not just the lungs.</h4>
+                        <p>Smoking harms nearly every organ of the body and affects a person’s overall health.</p>
+                    </li>
+                    <li >
+                        <h4>There is not much of a difference between Cigars and Cigarretes</h4>
+                        <p>Cigar smoking carries many of the same health risks as cigarette smoking.   
+                        </p>
+                    </li>
+                </ul>
+                <div>
+                    <img src="smoke.jpg" alt="An empty Hand.">
+                </div>
+            </section>
+            <section id="calc"> 
+                <label id="test">
+                    Smoking
+                    <input type="number" min="0" value="20" name="prodQuantity" id="prodQuantity">
+                    <select name="tabaccoProductFormat" id="tabaccoProductFormat"> 
+                        <option selected="true" value="">Cigarrete(s)</option>
+                        <option value="">Cigarrete Pack(s)</option>
+                    </select>
+                    per
+                    <select name="consumptionPeriod" id="consumptionPeriod">
+                        <option selected="true" value="daily">Day</option>
+                        <option value="weekly">Week</option>
+                        <option value="monthly">Month</option>
+                    </select>
+                    for which each costs
+                    $<input type="number" step="0.01" min="0" value="0.23" name="prodPrice" id="prodPrice">
+                    leaks you of 
+                    <span id="dailyLeak"></span>
+                    <span id="weeklyLeak"></span>
+                    <span id="monthlyLeak"></span>
+                    <span id="anualLeak"></span>
+                </label>
+            </section>
         </article>
         <article id="second-article">
             <header>
@@ -93,48 +95,92 @@
             </header>
             <section id="timeline">
                 <div id="timeline-1">
-                    <header><h4 >Within minutes</h4></header>
-                    <div><p>Heart rate drops.</p></div>
+                    <header>
+                        <h4>Within minutes</h4>
+                    </header>
+                    <div>
+                        <p>Heart rate drops.</p>
+                    </div>
                 </div>
                 <div id="timeline-2">
-                    <header><h4 >Hours after</h4></header>
-                    <div><p>Nicotine level in the blood drops to zero.</p></div>
+                    <header>
+                        <h4 >Hours after</h4>
+                    </header>
+                    <div>
+                        <p>Nicotine level in the blood drops to zero.</p>
+                    </div>
                 </div>
                 <div id="timeline-3">
-                    <header><h4 >The first days</h4></header>
-                    <div><p>Your sense of smell and taste improves.</p></div>
+                    <header>
+                        <h4 >The first days</h4>
+                    </header>
+                    <div>
+                        <p>Your sense of smell and taste improves.</p>
+                    </div>
                 </div>
                 <div id="timeline-4">
-                    <header><h4 >About a week after</h4></header>
-                    <div><p>Carbon monoxide level in the blood drops to level of someone who does not smoke.</p></div>
+                    <header>
+                        <h4 >About a week after</h4>
+                    </header>
+                    <div>
+                        <p>Carbon monoxide level in the blood drops to level of someone who does not smoke.</p>
+                    </div>
                 </div>
                 <div id="timeline-5">
-                    <header><h4 >Starting at the first month</h4></header>
-                    <div><p>The large number of nicotine receptors in your brain will return to normal levels and coughing and shortness of breath decrease.</p></div>
+                    <header>
+                        <h4 >Starting at the first month</h4>
+                    </header>
+                    <div>
+                        <p>The large number of nicotine receptors in your brain will return to normal levels and coughing and shortness of breath decrease.</p>
+                    </div>
                 </div>
                 <div id="timeline-6">
-                    <header><h4 >After three months</h4></header>
-                    <div><p>Your blood circulation improves. Making all physical activity much easier (including sex) and <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Smoker'27s_melanosis">Smoker's Melanosis</a> lesions may have healed or start healing.</p></div>
+                    <header>
+                        <h4 >After three months</h4>
+                    </header>
+                    <div>
+                        <p>Your blood circulation improves. Making all physical activity much easier (including sex) and <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Smoker'27s_melanosis">Smoker's Melanosis</a> lesions may have healed or start healing.</p>
+                    </div>
                 </div>
                 <div id="timeline-7">
-                    <header><h4 >A year</h4></header>
-                    <div><p> Risk of heart attack starts to drop sharply.</p></div> 
+                    <header>
+                        <h4 >A year</h4>
+                    </header>
+                    <div>
+                        <p> Risk of heart attack starts to drop sharply.</p>
+                    </div> 
                 </div>
                 <div id="timeline-8">
-                    <header><h4 >Three years</h4></header>
-                    <div><p>A person’s risk for coronary heart disease decreases by half and there should be no signs of <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Smoker'27s_melanosis">Smoker's Melanosis.</a></p></div>
+                    <header>
+                        <h4 >Three years</h4>
+                    </header>
+                    <div>
+                        <p>A person’s risk for coronary heart disease decreases by half and there should be no signs of <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Smoker'27s_melanosis">Smoker's Melanosis.</a></p>
+                    </div>
                 </div>
                 <div id="timeline-9">
-                    <header><h4 >Five years</h4></header>
-                    <div><p>Added risk of cancers of the mouth, throat, esophagus and voice box drops by half. </p></div>
+                    <header>
+                        <h4 >Five years</h4>
+                    </header>
+                    <div>
+                        <p>Added risk of cancers of the mouth, throat, esophagus and voice box drops by half. </p>
+                    </div>
                 </div>
                 <div id="timeline-10">
-                    <header><h4 >Ten years</h4></header>
-                    <div><p>Your risk of dying from lung cancer is about half that of a person who is still smoking.</p></div>
+                    <header>
+                        <h4 >Ten years</h4>
+                    </header>
+                    <div>
+                        <p>Your risk of dying from lung cancer is about half that of a person who is still smoking.</p>
+                    </div>
                 </div>
                 <div id="timeline-11">
-                    <header><h4 >Twenty years</h4></header>
-                    <div><p>Risk of cancers of the mouth, throat, and voice box drops to close to that of someone who does not smoke. Risk of pancreatic cancer drops to close to that of someone who does not smoke</p></div>
+                    <header>
+                        <h4 >Twenty years</h4>
+                    </header>
+                    <div>
+                        <p>Risk of cancers of the mouth, throat, and voice box drops to close to that of someone who does not smoke. Risk of pancreatic cancer drops to close to that of someone who does not smoke</p>
+                    </div>
                 </div>
             </section>
         </article>
@@ -161,12 +207,12 @@
    <footer id="contact-sources">
        <form action="" id="formContainer">
            <h2>Message Us</h2>
-           <textarea required name="userMessage" id="" placeholder="I'd like to ask about ... " cols="30" rows="10"></textarea>
+           <textarea required name="userMessage" id="" placeholder="Example: I'd like to ask about ... " cols="30" rows="10"></textarea>
            <div>
                <label for="email">
                    Enter your E-Mail: 
                </label>
-               <input required id="email" type="email" placeholder="Ex: name@gmail.com" name="" id="">
+               <input required id="email" type="email" placeholder="Example: name@gmail.com" name="" id="">
            </div>
        </form>
        <div id="sourcesContainer">
