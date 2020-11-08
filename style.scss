@@ -121,16 +121,17 @@ footer {
         content: "";
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: 10%;
         width: 90%;
-        margin: 5%;
-        background: no-repeat center url(./preventSmoking.jpeg);
+        min-height: 80vh;
+        margin: 5% 0;
+        background: no-repeat 70% 85% url(./preventSmoking.jpeg);
         background-size: 100% auto;
         border-radius: 1vh;
     }
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     align-items: center;
     h1 {
