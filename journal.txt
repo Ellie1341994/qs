@@ -1,13 +1,25 @@
 Thu 05 Nov 2020 10:56:47 AM -03
 
 Technologies and concepts I've learned during this project:
+
 --JS
 -Periodic updates using onload event handler
 --CS
 -flex box layout
 --pseudoelements
+
 --SASS
 -nesting
 -ampersand operator
 -control flow
 -loops
+
+Sat 07 Nov 2020 07:26:06 PM -03
+ 
+Today I found that if I use target="_blank" 
+I must set rel="noopener noreferrer" too, otherwise it's a security risk
+More info: 
+https://stackoverflow.com/questions/41842608/html-a-element-what-is-meant-by-the-exploitation-of-the-window-opener-api
+
+Sat 07 Nov 2020 09:26:15 PM -03
+Placeholders are not always accesible, It's good to always use labels in addition to them.

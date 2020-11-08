@@ -35,7 +35,6 @@ ul {
   background-color: rgba(200, 36, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-1 {
@@ -56,7 +55,6 @@ ul {
   background-color: rgba(200, 71, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-2 {
@@ -77,7 +75,6 @@ ul {
   background-color: rgba(200, 106, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-3 {
@@ -98,7 +95,6 @@ ul {
   background-color: rgba(200, 141, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-4 {
@@ -119,7 +115,6 @@ ul {
   background-color: rgba(200, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-5 {
@@ -140,7 +135,6 @@ ul {
   background-color: rgba(180, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-6 {
@@ -161,7 +155,6 @@ ul {
   background-color: rgba(160, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-7 {
@@ -182,7 +175,6 @@ ul {
   background-color: rgba(140, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-8 {
@@ -203,7 +195,6 @@ ul {
   background-color: rgba(120, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-9 {
@@ -224,7 +215,6 @@ ul {
   background-color: rgba(100, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-10 {
@@ -245,7 +235,6 @@ ul {
   background-color: rgba(80, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 #timeline-11 {
@@ -266,7 +255,6 @@ ul {
   background-color: rgba(60, 176, 10, 0.75);
   color: #d7d7d7;
   box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.45);
-  z-index: 1;
 }
 
 header {
@@ -276,56 +264,73 @@ header {
 
 footer {
   display: flex;
-  height: 100vh;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
-  text-align: center;
-  padding: 1% 0;
+  padding: 5% 0;
+  color: #333;
+  background: linear-gradient(#333, #322e32, #536d53);
+}
+footer form {
+  position: relative;
+  display: flex;
+  max-height: 90vh;
+  width: 80%;
+  padding: 0.5% 0;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: #333;
-  background: linear-gradient(#333, #d1d1d1);
-}
-footer #formContainer {
   background: #f1f1f1;
-  padding: 2.5vw;
-  border: 2px solid #fff;
-  border-radius: 0 0 0.5vw 0.5vw;
+  border-radius: 0.5vw;
+  border-top: 4px solid #537d53;
 }
-footer #formContainer:hover {
-  box-shadow: 1px 1px 5px 5px gray;
+footer form h2 {
+  padding: 2% 0;
 }
-footer #formContainer form div {
-  padding: 1vw;
+footer form label, footer form input {
+  padding: 0.5vw 0;
 }
-footer #contactInfoContainer {
+footer form textarea {
+  padding: 0.5vw;
+  min-height: 25vh;
+  width: 80%;
+  box-sizing: border-box;
+}
+footer form div {
+  width: 80%;
+  padding: 0.5vw 0;
+}
+footer form div label {
+  width: 20%;
+}
+footer form div input {
+  width: 80%;
+}
+footer #sourcesContainer {
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  background: #f1f1f1;
+  width: 25%;
+  margin: 2.5% 0;
+  border-radius: 0.5vw;
   padding: 0.5vw;
 }
-footer #contactInfoContainer > div {
-  display: flex;
-  padding: 2.5vw;
-  background: #f1f1f1;
-  border: 2px solid #fff;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0 0 0.5vw 0.5vw;
-  text-align: left;
-  flex: 0 0 max-content;
-}
-footer #contactInfoContainer > div:hover {
-  box-shadow: 1px 1px 5px 5px gray;
-}
-footer #contactInfoContainer > div:hover h2 {
-  visibility: hidden;
-}
-footer #contactInfoContainer > div:hover div, footer #contactInfoContainer > div:hover ul {
+footer #sourcesContainer:hover ul {
   visibility: visible;
 }
-footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
+footer #sourcesContainer:hover h2 {
+  visibility: hidden;
+}
+footer #sourcesContainer h2 {
   position: absolute;
+  top: 40%;
+  bottom: 40%;
+}
+footer #sourcesContainer ul {
   visibility: hidden;
 }
 
@@ -334,15 +339,14 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
   z-index: 1;
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 #main-nav-bar > ul {
-  position: absolute;
-  right: 10%;
+  width: 50%;
   display: flex;
   font-size: 0.75em;
-  padding: 1%;
-  flex-direction: column;
+  padding: 0.5%;
+  justify-content: space-evenly;
   background-color: #f1f1f1;
   border-radius: 0 0 0.5vw 0.5vw;
   border: 1px solid #333;
@@ -367,11 +371,8 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
   width: 90%;
-  height: auto;
   margin: 5%;
   background: no-repeat center url(./preventSmoking.jpeg);
   background-size: 100% auto;
@@ -438,9 +439,9 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
 }
 #first-article ul li {
   color: #2f2f2f;
-  border-left: 1em solid #537d53;
-  border-radius: 0.5vw 0 0 0.5vw;
+  border-left: 0.5em solid #537d53;
   padding-left: 0.5vw;
+  margin: 1vw 0;
 }
 
 #second-article {
@@ -449,7 +450,7 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #2f2f2f;
+  background-color: #333;
 }
 #second-article header {
   align-items: center;
@@ -467,6 +468,10 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
 
 #tips {
   background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   color: #f1f1f1;
 }
 #tips header {
@@ -476,6 +481,7 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
 }
 #tips section {
   display: flex;
+  width: 80%;
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 100vh;
@@ -485,16 +491,14 @@ footer #contactInfoContainer > div div, footer #contactInfoContainer > div ul {
   display: flex;
 }
 #tips section > div .bigExclamation {
-  padding: 1vw;
-  margin: 0 2.5%;
+  align-self: center;
   font-size: 5em;
-  text-align: center;
+  text-align: left;
   width: 25%;
 }
 #tips section > div .tip {
   width: 75%;
   position: relative;
-  margin: 0 2.5%;
   padding: 2.5vw;
   background-color: #f1f1f1;
   color: #333;
