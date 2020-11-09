@@ -98,44 +98,64 @@ footer #contactInfoContainer a #LIL {
   width: 50%;
   display: flex;
   font-size: 0.75em;
-  padding: 0.5%;
   justify-content: space-evenly;
   background-color: #f1f1f1;
   border-radius: 0 0 0.5vw 0.5vw;
   border: 1px solid #333;
   border-top: none;
 }
-#main-nav-bar > ul li {
+#main-nav-bar > ul > li {
   color: #333;
   padding: 0.5vw;
+  position: relative;
 }
-#main-nav-bar > ul li:hover {
+#main-nav-bar > ul > li a:hover, #main-nav-bar > ul > li label:hover {
   text-decoration: underline;
 }
-#main-nav-bar > ul #sourcesContainer {
-  position: relative;
+#main-nav-bar > ul > li input {
+  visibility: hidden;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#main-nav-bar > ul > li input:checked + #sourcesContainer {
   display: flex;
+}
+#main-nav-bar > ul > li #sourcesContainer {
+  position: absolute;
+  top: 150%;
+  left: -50%;
+  width: 200%;
+  display: none;
   align-items: center;
   flex-direction: column;
   background: #f1f1f1;
-  width: 25%;
-  margin: 2.5% 0;
+  text-align: center;
   border-radius: 0.5vw;
+  border: 1px solid #333;
+}
+#main-nav-bar > ul > li #sourcesContainer::before {
+  content: "";
+  position: relative;
+  background: #f1f1f1;
+  width: 16px;
+  height: 16px;
+  transform: rotate(45deg);
+  top: -9px;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  z-index: 1;
+}
+#main-nav-bar > ul > li #sourcesContainer ul li {
   padding: 0.5vw;
+  color: #333;
 }
-#main-nav-bar > ul #sourcesContainer:hover ul {
-  visibility: visible;
-}
-#main-nav-bar > ul #sourcesContainer:hover h2 {
-  visibility: hidden;
-}
-#main-nav-bar > ul #sourcesContainer h2 {
-  position: absolute;
-  top: 40%;
-  bottom: 40%;
-}
-#main-nav-bar > ul #sourcesContainer ul {
-  visibility: hidden;
+#main-nav-bar > ul > li #sourcesContainer ul li a:hover {
+  color: #537d53;
+  text-decoration: none;
 }
 
 #initial-cover {

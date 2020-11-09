@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 * {
     margin: 0;
     padding: 0;
@@ -84,40 +86,67 @@ footer {
 
 #main-nav-bar {
     > ul {
-        li {
+        > li {
             color: #333;
             padding: 0.5vw;
-            &:hover {
+            a:hover, label:hover {
                 text-decoration: underline;
             }
-        }
-        #sourcesContainer {
-            &:hover {
-                ul { visibility: visible; }
-                h2 { visibility: hidden; }
-            }
-            h2 {
-                position: absolute;
-                top: 40%; 
-                bottom: 40%;
-            }
-            ul {
+            input {
+                &:checked {
+                    + #sourcesContainer {
+                        display: flex;
+                    }
+                }
                 visibility: hidden;
+                width: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+            #sourcesContainer {
+                &::before {
+                    content: "";
+                    position: relative;
+                    background: #f1f1f1;
+                    width: 16px;
+                    height: 16px;
+                    transform: rotate(45deg);
+                    top: -9px;
+                    //top: #{-(math.sqrt(16*16 + 16*16) - 1) / 2 }px;
+                    border-top: 1px solid #333;
+                    border-left: 1px solid #333;
+                    z-index: 1;
+                }
+                ul {
+                    li {
+                        a:hover {
+                            color: #537d53;
+                            text-decoration: none;
+                        }
+                        padding: 0.5vw;
+                        color: #333;
+                    }
+                }
+                position: absolute;
+                top: 150%;
+                left: -50%;
+                width: 200%;
+                display: none;
+                align-items: center;
+                flex-direction: column;
+                background: #f1f1f1;
+                text-align: center;
+                border-radius: 0.5vw;
+                border: 1px solid #333;
             }
             position: relative;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            background: #f1f1f1;
-            width: 25%;
-            margin: 2.5% 0;
-            border-radius: 0.5vw;
-            padding: 0.5vw;
         }
         width: 50%;
         display: flex;
         font-size: 0.75em;
-        padding: 0.5%;
         justify-content: space-evenly;
         background-color: #f1f1f1;
         border-radius: 0 0 0.5vw 0.5vw;
