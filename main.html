@@ -24,6 +24,31 @@
             <li>
                 <a href="#contact-sources">Contact and Sources</a>
             </li>
+            <li>
+                <div id="sourcesContainer">
+                    <h2>Sources</h2>
+                    <ul>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.cancer.org/healthy/stay-away-from-tobacco/benefits-of-quitting-smoking-over-time.html">Cancer.org</a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting?referrer=https%3A%2F%2Fwww.google.com%2F">lung.org</a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.nhs.uk/live-well/quit-smoking/">nhs.uk</a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.cdc.gov/tobacco">cdc/tabacco.gov</a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-015-1617-5">Systematic review of cigar smoking...</a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.academia.edu/2475072/How_are_habits_formed_Modelling_habit_formation_in_the_real_world">How habits are formed</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </nav>
     <header id="initial-cover">
@@ -71,11 +96,11 @@
                     <input type="number" min="0" value="20" name="prodQuantity" id="prodQuantity">
                     <select name="tabaccoProductFormat" id="tabaccoProductFormat"> 
                         <option selected="true" value="">Cigarrete(s)</option>
-                        <option value="">Cigarrete Pack (20)</option>
-                        <option value="">Cigarrete Pack (25)</option>
-                        <option value="">Cigarrete Pack (30)</option>
-                        <option value="">Cigarrete Pack (40)</option>
-                        <option value="">Cigarrete Pack (50)</option>
+                        <option value="20">Cigarrete Pack (20)</option>
+                        <option value="25">Cigarrete Pack (25)</option>
+                        <option value="30">Cigarrete Pack (30)</option>
+                        <option value="40">Cigarrete Pack (40)</option>
+                        <option value="50">Cigarrete Pack (50)</option>
                     </select>
                     per
                     <select name="consumptionPeriod" id="consumptionPeriod">
@@ -85,7 +110,7 @@
                     </select>
                     for which each costs
                     $<input type="number" step="0.01" min="0" value="0.23" name="prodPrice" id="prodPrice">
-                    leaks you of 
+                    <br>
                     <span id="dailyLeak"></span>
                     <span id="weeklyLeak"></span>
                     <span id="monthlyLeak"></span>
@@ -219,30 +244,11 @@
                <input required id="email" type="email" placeholder="Example: name@gmail.com" name="" id="">
            </div>
        </form>
-       <div id="sourcesContainer">
-           <h2>Sources</h2>
-           <ul>
-               <li>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.cancer.org/healthy/stay-away-from-tobacco/benefits-of-quitting-smoking-over-time.html">Cancer.org</a>
-               </li>
-               <li>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting?referrer=https%3A%2F%2Fwww.google.com%2F">lung.org</a>
-               </li>
-               <li>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.nhs.uk/live-well/quit-smoking/">nhs.uk</a>
-               </li>
-               <li>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.cdc.gov/tobacco">cdc/tabacco.gov</a>
-               </li>
-               <li>
-                   <a target="_blank" rel="noopener noreferrer" href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-015-1617-5">Systematic review of cigar smoking...</a>
-               </li>
-               <li>
-                   <a target="_blank" rel="noopener noreferrer" href="https://www.academia.edu/2475072/How_are_habits_formed_Modelling_habit_formation_in_the_real_world">How habits are formed</a>
-               </li>
-           </ul>
+       <div id="contactInfoContainer">
+           <a href="https://github.com/Ellie1341994"><img src="GitHub-Mark.svg" alt="GitHub Logo" id="GHL"></a>
+           <a href="https://www.linkedin.com/in/eliassacchivanbroock816861186/"><img src="LI-Logo.png" alt="LinkedIn Logo" id="LIL"></a>
        </div>
    </footer>
-   <script src="costCal.js"></script>
+   <script src="calc.js"></script>
 </body>
 </html>
