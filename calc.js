@@ -65,7 +65,7 @@ function resetCigarQuantity() {
     document.getElementById("prodQuantity").value = 1;
 }
 
-document.getElementById('test').onload = displayUserInfo();
+document.getElementById('textCalc').onload = displayUserInfo();
 document.getElementById('tabaccoProductFormat').addEventListener('change', resetCigarQuantity);
 
 
