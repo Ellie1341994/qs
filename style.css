@@ -92,6 +92,7 @@ footer #contactInfoContainer a #LIL {
   width: 100%;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 #main-nav-bar > label, #main-nav-bar > input {
   display: none;
@@ -141,6 +142,7 @@ footer #contactInfoContainer a #LIL {
   text-align: center;
   border-radius: 0.5vw;
   border: 1px solid #333;
+  box-sizing: border-box;
 }
 #main-nav-bar > ul > li #sourcesContainer::before {
   content: "";
@@ -562,7 +564,7 @@ footer #contactInfoContainer a #LIL {
   justify-content: space-evenly;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 680px), (pointer: coarse) {
   #textCalc {
     display: flex;
     text-align: left;
@@ -618,6 +620,7 @@ footer #contactInfoContainer a #LIL {
     background: #f1f1f1;
     border: none;
     border-bottom: 1px solid #333;
+    padding: 2.5% 0 2.5% 0;
   }
   #main-nav-bar > ul::before {
     content: "|||";
@@ -632,6 +635,16 @@ footer #contactInfoContainer a #LIL {
   #main-nav-bar > ul > li > #sourcesContainer {
     width: 100%;
     left: 0;
+    padding: 0;
+    top: 150%;
+    border: none;
+    box-shadow: 0 0 2px 1px #333;
+  }
+  #main-nav-bar > ul > li > #sourcesContainer::before {
+    border: none;
+    box-shadow: 0 0 2px 1px #333;
+    margin: 0;
+    padding: 0;
   }
   #main-nav-bar > ul:hover {
     height: 25vh;
@@ -646,7 +659,7 @@ footer #contactInfoContainer a #LIL {
   }
 }
 /* smartphones, touchscreens */
-@media (hover: none) and (pointer: coarse) and (max-width: 680px) {
+@media (any-hover: none) and (pointer: coarse) {
   #main-nav-bar {
     height: auto;
   }
@@ -686,6 +699,8 @@ footer #contactInfoContainer a #LIL {
   }
   #main-nav-bar > input:checked + ul > li > #sourcesContainer {
     width: 100%;
+    border: none;
+    box-shadow: 0 0 2px 1px #333;
     left: 0;
     margin: 2.5% 0 0 0;
   }

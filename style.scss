@@ -141,6 +141,7 @@ footer {
                 text-align: center;
                 border-radius: 0.5vw;
                 border: 1px solid #333;
+                box-sizing: border-box;
             }
             position: relative;
             transition: linear 1s 5s all;
@@ -165,6 +166,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 #initial-cover{
     &::before {
@@ -368,7 +370,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
-@media (max-width: 680px) {
+@media (max-width: 680px), (pointer: coarse) {
     #textCalc {
         display: flex;
         text-align: left;
@@ -431,8 +433,18 @@ footer {
                 display: none;
                 text-align: center;
                 > #sourcesContainer {
+                    &::before {
+                        border: none;
+                        box-shadow: 0 0 2px 1px #333;
+                        margin: 0;
+                        padding: 0;
+                    }
                     width: 100%;
                     left: 0;
+                    padding: 0;
+                    top: 150%;
+                    border: none;
+                    box-shadow: 0 0 2px 1px #333;
                 }
             }
             &:hover { 
@@ -446,12 +458,13 @@ footer {
                 height: 25vh;
                 box-shadow: 0 0 2px 1px #333;
             }
+            padding: 2.5% 0 2.5% 0;
         }
         height: auto;
     }
 }
 /* smartphones, touchscreens */
-@media (hover: none) and (pointer: coarse) and (max-width: 680px) {
+@media (any-hover: none) and (pointer: coarse) {
     #main-nav-bar {
         > label {
             display: initial;
@@ -487,6 +500,8 @@ footer {
                         font-weight: bold;
                         > #sourcesContainer {
                             width: 100%;
+                            border: none;
+                            box-shadow: 0 0 2px 1px #333;
                             left: 0;
                             margin: 2.5% 0 0 0;
                         }
