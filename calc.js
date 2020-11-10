@@ -20,7 +20,7 @@ function calcQuantityCosts(smokerInfo) {
 function calculatePeriodicCosts() {
     const smokerInfo = getUserConsumptionInfo(),
           totalCost = calcQuantityCosts(smokerInfo),
-          period = smokerInfo.period;
+          period = smokerInfo.consumptionPeriod;
 
     if ( period === "daily" ) {
         return {
