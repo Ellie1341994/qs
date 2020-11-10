@@ -6,7 +6,8 @@ Technologies and concepts I've learned during this project:
 -Periodic updates using onload event handler
 --CS
 -flex box layout
---pseudoelements
+-pseudoelements
+-@media queries
 
 --SASS
 -nesting
