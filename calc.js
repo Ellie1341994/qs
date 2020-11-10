@@ -8,12 +8,7 @@ function getUserConsumptionInfo(){
 }
 
 function calcQuantityCosts(smokerInfo) {
-    let quantity = smokerInfo.prodFormat,
-        baseCosts = smokerInfo.prodQuantity * smokerInfo.prodPrice;
-    if ( ! isNaN(parseInt(quantity)))
-    {
-        return baseCosts * quantity;  
-    }
+    let baseCosts = smokerInfo.prodQuantity * smokerInfo.prodPrice;
     return baseCosts;
 }
 
