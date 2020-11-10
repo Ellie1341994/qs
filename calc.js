@@ -37,7 +37,7 @@ function calculatePeriodicCosts() {
         return {
             monthly: totalCost, 
             weekly: totalCost / 4,
-            daily: totalCost / 4 * 7,
+            daily: totalCost / (4 * 7),
             anual: totalCost * 12
         } 
     }
@@ -47,7 +47,7 @@ function displayUserInfo(){
 
     let periodicCosts = calculatePeriodicCosts();
     for ( let period in periodicCosts ) {
-        periodicCosts[period] = periodicCosts[period].toFixed(2);
+        periodicCosts[period] = periodicCosts[period].toFixed(3);
     }
     document.getElementById('dailyLeak').innerHTML =  "leaks you of " + "<strong>$" + periodicCosts.daily + "</strong> per day,";
     document.getElementById('weeklyLeak').innerHTML =  "<strong>$" + periodicCosts.weekly + "</strong> per week,";
