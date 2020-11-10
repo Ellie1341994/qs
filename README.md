@@ -42,3 +42,8 @@ The page has the following **standard scheme**
 
 # Extra
 This site was presented as a **Final Project** for **CS50's Introduction to Computer Science** ( Web Track ) M.O.O.C
+
+# Long term intentions
+* Improve SCSS programmed structure to fit B.E.M Methodology
+* A working HTML Form
+* Add a Custom Domain
