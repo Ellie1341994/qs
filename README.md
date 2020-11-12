@@ -2,7 +2,7 @@
 
 **Quit Smoking Web Site Project** _started with the intention to help a friend to quit its smoking habit/addiction_ and I suddenly found myself investigating potential ways to motivate and guide him to overcome it.
 
-I decided to build _this project with that purpose in mind but with an extended utility, reach other people_.
+I decided to build _this project with that purpose in mind but with an extended utility, to reach other people_.
 
 # Content
 All photos were obtained from https://www.pexels.com/ 
@@ -47,3 +47,4 @@ This site was presented as a **Final Project** for **CS50's Introduction to Comp
 * Improve SCSS programmed structure to fit B.E.M Methodology
 * A working HTML Form
 * Add a Custom Domain
+* Add spanish version
