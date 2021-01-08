@@ -27,7 +27,7 @@ The page has the following **standard scheme**
 # Tools used for building the site
 ### Software Tools
 * SCSS Pre-processor
-*  Vim Text Editor
+* Vim Text Editor
 * Vanilla JavaScript (ES6)
 * Standard HTML5
 ### Learning Sources
@@ -44,7 +44,7 @@ The page has the following **standard scheme**
 This site was presented as a **Final Project** for **CS50's Introduction to Computer Science** ( Web Track ) M.O.O.C
 
 # Long term intentions
-* Improve SCSS programmed structure to fit B.E.M Methodology
+* Implement B.E.M Methodology
 * A working HTML Form
 * Add a Custom Domain
-* Add spanish version
+* Add Spanish Version
